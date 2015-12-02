@@ -22,6 +22,9 @@ public class JavaApplication0038 {
         for (int i = 0 ; i < 16 ; i++){
            System.out.println ( i/2 ) ;
         }
+        
+        Widget_ w = new Widget_() ;
+        w.print() ;
     }
     
 }
