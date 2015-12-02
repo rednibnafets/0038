@@ -19,6 +19,9 @@ public class JavaApplication0038 {
         // TODO code application logic here
         // more comments
         // add
+        for (int i = 0 ; i < 16 ; i++){
+           System.out.println ( i/2 ) ;
+        }
     }
     
 }
