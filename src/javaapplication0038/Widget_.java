@@ -18,6 +18,12 @@ public class Widget_ {
         w = 0 ;
     }
     
+    public Widget_ setW(int newW)
+    {
+        this.w = newW ;
+        return this ;
+    }
+    
     public Widget_ print()
     {
         System.out.println(w) ;
