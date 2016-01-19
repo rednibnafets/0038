@@ -34,6 +34,21 @@ public class Widget_ {
         return this.radius ;
     }
     
+    public int decreaseRadius(int decrement)
+    {
+        if ( ( this.radius + decrement ) >= minRadius ) 
+        {
+            this.radius -= decrement ;   
+        }  
+        else if ( ( this.radius + decrement ) < minRadius )
+        {
+            // do nothing
+        }
+
+        return this.radius ;
+    }
+    
+    
     public Widget_ print()
     {
         System.out.println(" Widget radius: " + this.radius) ;
