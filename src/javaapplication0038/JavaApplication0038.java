@@ -19,8 +19,6 @@ public class JavaApplication0038 {
      */
     private static final int maxW = 123 ;
     public static void main(String[] args) {
-
-        ArrayList< Widget_ > widgetList = new ArrayList<>() ;
         
         WidgetGroup_ wg = new WidgetGroup_() ;
         
@@ -30,6 +28,8 @@ public class JavaApplication0038 {
         }
 
         wg.displayAll() ;
+        
+        System.out.println(" total area of all widgets: " + wg.sumOfAreas() );
     }
     
 }

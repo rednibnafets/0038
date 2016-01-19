@@ -18,7 +18,7 @@ public class Widget_ {
     private int length ;
     private final int minLength = 100 ;
     private final int maxLength = 990 ;
-    
+            
     public Widget_()
     {
         width = 1 ;

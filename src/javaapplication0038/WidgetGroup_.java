@@ -44,13 +44,24 @@ public class WidgetGroup_ {
     // calculate the total area of all Widget_
     public int sumOfAreas()
     {
-         int area = 0 ;
+         int totalArea = 0 ;
          for ( Widget_ w : lw )
          {
-            area += ( w.getLength() * w.getWidth() ) ;
+            totalArea += ( w.getLength() * w.getWidth() ) ;
          }
          
-         return area ;
+         return totalArea ;
     }
     
+    // calculate the total area of all Widget_
+    public int sumOfLength()
+    {
+         int totalLength = 0 ;
+         for ( Widget_ w : lw )
+         {
+            totalLength += w.getLength() ;
+         }
+         
+         return totalLength ;
+    }    
 }
