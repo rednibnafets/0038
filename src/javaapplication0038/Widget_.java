@@ -18,12 +18,19 @@ public class Widget_ {
     private int length ;
     private final int minLength = 100 ;
     private final int maxLength = 990 ;
-            
+    
+    // default constructor        
     public Widget_()
     {
         width = 1 ;
-        length = 1 ;
+        length = 100 ;
     }
+            
+    public Widget_(int newWidth, int newLength)
+    {
+        this.width = newWidth ;
+        this.length = newLength ;
+    }    
     
     public int getLength()
     {
