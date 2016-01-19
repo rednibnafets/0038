@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class WidgetGroup_ {
     
-    private ArrayList< Widget_ > lw ;
+    private ArrayList< Widget_ > lw ;   // list of Widget_s
     //private final double pi = 3.1415624 ; 
     
     public WidgetGroup_ () 
@@ -25,6 +25,19 @@ public class WidgetGroup_ {
     public WidgetGroup_ addWidget(Widget_ newWidget) 
     {
         lw.add(newWidget) ;
+        return this ;
+    }
+    
+    public WidgetGroup_ displayAll()
+    {
+        for (Widget_ w : lw) {
+            System.out.println("------------------------------------------");
+            System.out.println( "length of Widget_ :" + w.getLength() );
+            System.out.println( "width of Widget_ :" + w.getWidth() );           
+            System.out.println("------------------------------------------");
+
+        }
+        
         return this ;
     }
     

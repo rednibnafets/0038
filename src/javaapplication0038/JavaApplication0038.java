@@ -22,16 +22,14 @@ public class JavaApplication0038 {
 
         ArrayList< Widget_ > widgetList = new ArrayList<>() ;
         
+        WidgetGroup_ wg = new WidgetGroup_() ;
+        
         for (int wcount = 0 ; wcount < maxW ; wcount++){
             Widget_ w = new Widget_() ;  
-            widgetList.add(w) ;
+            wg.addWidget(w) ;
         }
 
-        for (Widget_ w : widgetList) {
-            System.out.print("Value held in Widget_ :");
-            w.print() ;
-
-        }
+        wg.displayAll() ;
     }
     
 }
