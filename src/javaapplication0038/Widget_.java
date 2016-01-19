@@ -11,22 +11,32 @@ package javaapplication0038;
  */
 public class Widget_ {
     
-    private int w ;
+    private int radius ;
+    private final int minRadius = 1 ;
+    private final int maxRadius = 99 ;
     
     public Widget_()
     {
-        w = 0 ;
+        radius = 1 ;
     }
     
-    public Widget_ setW(int newW)
+    public int increaseRadius(int increment)
     {
-        this.w = newW ;
-        return this ;
+        if ( ( this.radius + increment ) > maxRadius ) 
+        {
+            // do nothing
+        }  
+        else if ( ( this.radius + increment ) <= maxRadius )
+        {
+             this.radius += increment ;        
+        }
+
+        return this.radius ;
     }
     
     public Widget_ print()
     {
-        System.out.println(w) ;
+        System.out.println(" Widget radius: " + this.radius) ;
         return this;
     }
     
