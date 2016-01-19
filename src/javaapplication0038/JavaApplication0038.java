@@ -30,6 +30,7 @@ public class JavaApplication0038 {
         wg.displayAll() ;
         
         System.out.println(" total area of all widgets: " + wg.sumOfAreas() );
+        System.out.println(" total length of all widgets: " + wg.totalLength() );
     }
     
 }

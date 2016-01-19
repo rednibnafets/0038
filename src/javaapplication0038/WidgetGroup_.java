@@ -54,7 +54,7 @@ public class WidgetGroup_ {
     }
     
     // calculate the total area of all Widget_
-    public int sumOfLength()
+    public int totalLength()
     {
          int totalLength = 0 ;
          for ( Widget_ w : lw )
