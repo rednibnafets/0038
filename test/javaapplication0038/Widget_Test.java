@@ -64,13 +64,25 @@ public class Widget_Test {
      */
     @Test
     public void testGetWidth() {
-        System.out.println("getWidth");
-        Widget_ instance = new Widget_();
-        int expResult = 0;
+        System.out.println("TEST: getWidth");
+        Widget_ instance = new Widget_(10, 100);
+        
+        instance.increaseWidth(10) ;
+        int expResult = 20;
         int result = instance.getWidth();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
+        instance.increaseWidth(10) ;
+        expResult = 30;
+        result = instance.getWidth();
+        assertEquals(expResult, result);
+        
+        // try to go beyond maxWidth -> does not affect the width!
+        instance.increaseWidth(100) ;
+        expResult = 30;
+        result = instance.getWidth();
+        assertEquals(expResult, result);        
+        
     }
 
     /**
