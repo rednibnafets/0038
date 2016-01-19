@@ -11,47 +11,91 @@ package javaapplication0038;
  */
 public class Widget_ {
     
-    private int radius ;
-    private final int minRadius = 1 ;
-    private final int maxRadius = 99 ;
+    private int width ;
+    private final int minWidth = 1 ;
+    private final int maxWidth = 99 ;
+
+    private int length ;
+    private final int minLength = 100 ;
+    private final int maxLength = 990 ;
     
     public Widget_()
     {
-        radius = 1 ;
+        width = 1 ;
+        length = 1 ;
     }
     
-    public int increaseRadius(int increment)
+    public int getLength()
     {
-        if ( ( this.radius + increment ) > maxRadius ) 
+        return this.length ;
+    }
+    
+    public int getWidth()
+    {
+        return this.width ;
+    }
+    
+    public int increaseWidth(int increment)
+    {
+        if ( ( this.width + increment ) > maxWidth ) 
         {
             // do nothing
         }  
-        else if ( ( this.radius + increment ) <= maxRadius )
+        else if ( ( this.width + increment ) <= maxWidth )
         {
-             this.radius += increment ;        
+             this.width += increment ;        
         }
 
-        return this.radius ;
+        return this.width ;
     }
     
-    public int decreaseRadius(int decrement)
+    public int decreaseWidth(int decrement)
     {
-        if ( ( this.radius + decrement ) >= minRadius ) 
+        if ( ( this.width + decrement ) >= minWidth ) 
         {
-            this.radius -= decrement ;   
+            this.width -= decrement ;   
         }  
-        else if ( ( this.radius + decrement ) < minRadius )
+        else if ( ( this.width + decrement ) < minWidth )
         {
             // do nothing
         }
 
-        return this.radius ;
+        return this.width ;
+    }
+
+    
+    public int increaseLength(int increment)
+    {
+        if ( ( this.length + increment ) > maxLength ) 
+        {
+            // do nothing
+        }  
+        else if ( ( this.length + increment ) <= maxLength )
+        {
+             this.length += increment ;        
+        }
+
+        return this.length ;
     }
     
+    public int decreaseLength(int decrement)
+    {
+        if ( ( this.length + decrement ) >= minLength ) 
+        {
+            this.length -= decrement ;   
+        }  
+        else if ( ( this.length + decrement ) < minLength )
+        {
+            // do nothing
+        }
+
+        return this.length ;
+    }    
     
     public Widget_ print()
     {
-        System.out.println(" Widget radius: " + this.radius) ;
+        System.out.println(" Widget width: " + this.width) ;
+        System.out.println(" Widget length: " + this.length) ;
         return this;
     }
     
