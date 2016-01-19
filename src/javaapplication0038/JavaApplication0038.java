@@ -18,9 +18,7 @@ public class JavaApplication0038 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        // more comments
-        // add
+
         for (int i = 0 ; i < 16 ; i++){
            System.out.println ( i/2 ) ;
         }
