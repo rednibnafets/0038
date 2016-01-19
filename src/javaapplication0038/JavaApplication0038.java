@@ -17,14 +17,21 @@ public class JavaApplication0038 {
     /**
      * @param args the command line arguments
      */
+    private static int maxW = 123 ;
     public static void main(String[] args) {
 
-        for (int i = 0 ; i < 16 ; i++){
-           System.out.println ( i/2 ) ;
-        }
+        ArrayList< Widget_ > widgetList = new ArrayList<>() ;
         
-        Widget_ w = new Widget_() ;
-        w.print() ;
+        for (int wcount = 0 ; wcount < maxW ; wcount++){
+            Widget_ w = new Widget_() ;  
+            w.setW( wcount * wcount ) ;
+            widgetList.add(w) ;
+        }
+
+        for (Widget_ w : widgetList) {
+            System.out.print("Value held in Widget_ :");
+            w.print() ;
+        }
     }
     
 }
