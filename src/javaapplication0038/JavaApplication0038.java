@@ -6,6 +6,8 @@
 
 package javaapplication0038;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author stefan
